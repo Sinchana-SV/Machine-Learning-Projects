@@ -28,7 +28,7 @@ Each project is implemented in its own **Jupyter Notebook**, with full workflows
 ---
 
 ### 🏦 1. Customer Delinquency Risk Prediction – Geldium
-<img width="1047" height="601" alt="image" src="https://github.com/user-attachments/assets/1b29bb60-e6cd-4241-8237-5db14f6e0c13" />
+<img width="698" height="392" alt="image" src="https://github.com/user-attachments/assets/f908328f-3793-41f4-ae3d-15dac30723de" />
 
 **Goal:**  
 Help a fictional fintech company **Geldium** identify **high-risk customers** likely to become **delinquent on their payments**, and understand *why* they are risky.
