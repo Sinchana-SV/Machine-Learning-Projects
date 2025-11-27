@@ -1,5 +1,5 @@
 # 💳👩🏻‍💻Customer Delinquency Risk Prediction – Geldium (Gen-AI Data Analytics)
-<img width="1066" height="597" alt="image" src="https://github.com/user-attachments/assets/8338bc82-d1ba-4cac-b617-29e36b094225" />
+<img width="698" height="392" alt="image" src="https://github.com/user-attachments/assets/abd0e8d0-00ce-44a8-a0b9-00dbbedf6f3c" />
 
 
 This repository contains my end-to-end **Machine Learning Project** from the
