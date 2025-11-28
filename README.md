@@ -1,33 +1,111 @@
 # 🤖 Machine Learning Projects
 
-Welcome to my **Machine Learning Projects** repository! 🎯  
-This repo showcases end-to-end projects where I apply **Data Science & ML** to solve real-world style business problems using Python.
+# 🧠📊 Machine Learning Projects Portfolio
 
-Currently included:
+This repository contains three fundamental machine learning projects covering:
 
-1. 🏦 **Customer Delinquency Risk Prediction – Geldium (Credit Risk ML)**
-2. 🧠 **Employee Wellness Prediction – Mental Health Treatment Classifier**
+- 🔢 Linear Regression: Brain Mass Prediction
+- ❤️ Logistic Regression: Credit Card Deliquency, Employee Wellness Prediction
+- 🛍️ K-Means Clustering: Mall Customers Segmentation, Credit Card Data
 
-Each project is implemented in its own **Jupyter Notebook**, with full workflows from **EDA → Feature Engineering → Modelling → Evaluation**.
-
----
-
-## 🧱 Tech Stack
-
-- 🐍 **Python**
-- 📓 **Jupyter Notebook**
-- 📊 **Pandas, NumPy** – data manipulation
-- 📈 **Matplotlib, Seaborn** – data visualisation
-- 🤖 **Scikit-learn, XGBoost** – machine learning models
-- 🧮 **Stats & ML concepts** – EDA, feature engineering, model comparison, metrics
+Each project demonstrates data preprocessing, modeling, evaluation, and insights tailored for real-world applications.
 
 ---
 
-## 📁 Projects Overview
+## 🔢 Brain Weight Prediction using Linear Regression
+
+### 📋 Project Overview
+
+This project uses Linear Regression to predict brain mass based on head size, age, and gender. It serves as an introduction to regression modeling, exploring how physiological features relate to brain weight.
+
+### 🗂️ Dataset Description
+
+The dataset is compiled from a medical study with the following features:
+
+| Feature     | Type       | Description                           |
+|-------------|------------|---------------------------------------|
+| Gender      | Categorical| Male / Female                         |
+| AgeGroup    | Categorical| Age category (e.g., 20–30, 30–40)     |
+| Head Size   | Continuous | Head circumference (cm³)              |
+| Brain Weight| Continuous | Brain mass (grams)                    |
+
+### ⚙️ Methodology
+
+- Encoded categorical variables (Gender, AgeGroup)
+- Performed correlation analysis
+- Built a Linear Regression model
+- Evaluated with MAE, MSE, RMSE, and R²
+
+### 📈 Results
+
+| Metric        | Value       |
+|---------------|-------------|
+| MAE           | ~30 g       |
+| MSE           | ~1700       |
+| RMSE          | ~41.23 g    |
+| R² Score      | ~0.85       |
+
+### 🔍 Insights
+
+- Head size had a strong positive correlation with brain weight.
+- Age group showed moderate influence.
+- The model explains ~85% of variance.
+
+---
+## 🛍️ Customer Segmentation using K-Means Clustering
+
+### 📋 Project Overview
+
+K-Means clustering is applied to identify customer segments based on Annual Income and Spending Score. Useful for targeted marketing strategies.
+
+### 🗂️ Dataset Description
+
+**File:** `Mall_Customers.csv`  
+**Size:** 200 records  
+**Source:** Kaggle
+
+| Column               | Type      | Description                                  |
+|----------------------|-----------|----------------------------------------------|
+| CustomerID           | Integer   | Unique customer ID                           |
+| Gender               | Categorical | Male/Female                               |
+| Age                  | Integer   | Age of customer                              |
+| Annual Income (k$)   | Integer   | Annual income in $1000s                      |
+| Spending Score (1–100)| Integer  | Mall-assigned spending score                 |
+
+### ⚙️ Methodology
+
+- Selected features: `Annual Income` and `Spending Score`
+- Scaled features using StandardScaler
+- Used the elbow method to determine optimal `k=5`
+- Applied K-Means clustering
+- Interpreted clusters by centers
+
+### 📊 Cluster Centers (k=5)
+
+| Cluster | Income (k$) | Spending Score |
+|---------|-------------|----------------|
+| 0       | 55.30       | 49.52          |
+| 1       | 86.54       | 82.13          |
+| 2       | 25.73       | 79.36          |
+| 3       | 88.20       | 17.11          |
+| 4       | 26.30       | 20.91          |
+
+### 🔍 Interpretation
+
+- **Cluster 1**: High income & high spending → Premium segment
+- **Cluster 2**: Low income & high spending → Impulse buyers
+- **Cluster 3**: High income & low spending → Frugal rich
+- **Cluster 4**: Low income & low spending → Budget group
+- **Cluster 0**: Average income & spending → Regulars
+
+### 📈 Evaluation
+
+- Used Elbow Method and Silhouette Score (~0.56) for quality
+- Clusters are interpretable and useful for campaign targeting
 
 ---
 
-### 🏦 1. Customer Delinquency Risk Prediction – Geldium
+### 🏦 Customer Delinquency Risk Prediction – Geldium
 <img width="698" height="392" alt="image" src="https://github.com/user-attachments/assets/f908328f-3793-41f4-ae3d-15dac30723de" />
 
 **Goal:**  
@@ -60,7 +138,7 @@ Help a fictional fintech company **Geldium** identify **high-risk customers** li
 
 ---
 
-### 🧠 2. Employee Wellness Prediction – Mental Health Treatment Classifier
+### 🧠Employee Wellness Prediction – Mental Health Treatment Classifier
 <img width="723" height="677" alt="image" src="https://github.com/user-attachments/assets/51e75d09-0193-4013-9c87-8a8c39f5a1dd" />
 
 **Goal:**  
@@ -94,4 +172,17 @@ Enable a tech company to **identify employees who may need mental health treatme
 
 **Main file:**  
 `Final_Hackathon.ipynb`
+
+---
+
+## 🧱 Tech Stack
+
+- 🐍 **Python**
+- 📓 **Jupyter Notebook**
+- 📊 **Pandas, NumPy** – data manipulation
+- 📈 **Matplotlib, Seaborn** – data visualisation
+- 🤖 **Scikit-learn, XGBoost** – machine learning models
+- 🧮 **Stats & ML concepts** – EDA, feature engineering, model comparison, metrics
+
+---
 
