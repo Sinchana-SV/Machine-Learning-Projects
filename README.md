@@ -1,7 +1,5 @@
 # 🤖 Machine Learning Projects
 
-# 🧠📊 Machine Learning Projects Portfolio
-
 This repository contains three fundamental machine learning projects covering:
 
 - 🔢 Linear Regression: Brain Mass Prediction
@@ -13,6 +11,7 @@ Each project demonstrates data preprocessing, modeling, evaluation, and insights
 ---
 
 ## 🔢 Brain Weight Prediction using Linear Regression
+<img width="920" height="609" alt="image" src="https://github.com/user-attachments/assets/df21d9e7-c296-484f-b1fe-bcc3c86471a9" />
 
 ### 📋 Project Overview
 
@@ -53,6 +52,7 @@ The dataset is compiled from a medical study with the following features:
 
 ---
 ## 🛍️ Customer Segmentation using K-Means Clustering
+<img width="712" height="532" alt="image" src="https://github.com/user-attachments/assets/99eb6fa0-3011-47db-90cd-275d94147a56" />
 
 ### 📋 Project Overview
 
